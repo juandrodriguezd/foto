@@ -1,0 +1,156 @@
+body {
+	font-family: Dancing Script;
+	background-color: black;
+}
+
+.contenido{
+	color: white;
+	background-color: #5b7989;
+	border-radius: 10px 10px 0 0;
+
+}
+
+.contenido h1{
+	text-shadow: 2px 2px #02010a;
+
+}
+
+.menu{
+	text-shadow: 2px 2px #02010a;
+	list-style: none;
+	text-align: center;
+	line-height: 40px;
+}
+
+.menu li{
+	display: inline-block;
+}
+
+.menu a{
+	color: white;
+	float: right;
+}
+
+.menu li a {
+	
+	text-decoration: none;
+	font-size: 1.429em;
+	padding: 0 1em;
+}
+
+
+.pagina{
+	color: #02010a;
+	background-color: #C6d5c5;
+	border-radius: 0 0 10px 10px;
+	text-align: center;
+
+}
+
+.container, .pagina {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.container div {
+	box-sizing: border-box;
+	min-width: 150px;
+	padding: 20px;
+}
+
+.container, .contenido, .pagina {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+.c1, .c2, .c3, .c4, .c5, .c6 {
+	color: black;
+	background-color: #d5c75f;
+}
+
+.c1, .c2, .c3, .c4, .c5, .c6, .contenido, .pagina, #contacto, #terminos, #redes, #derechos {
+	width: 100%;
+
+}
+
+@media (min-width: 900px) {
+	.c1, .c2, .c3 {
+		width: 33.33%;
+	}
+
+	.c4, .c5, .c6 {
+		width: 33.33%;
+	}
+
+	#contacto, #terminos, #redes, #derechos {
+		width: 25%;
+	}
+
+
+}
+
+@media (min-width: 899px){
+
+	.contenido {
+		width: 100%
+	}
+
+	.c1, .c2, .c3 {
+		width: 33.33%;
+	}
+
+	.c4, .c5, .c6 {
+		width: 33.33%;
+	}
+
+	.container, .contenido {
+		width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+}
+
+@media (min-width: 899px){
+
+	.pagina {
+		width: 100%;
+	}
+
+	#contacto, #terminos, #redes, #derechos {
+		width: 25%;
+	}
+
+	.pagina {
+		width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+}
+
+.c1 img, .c2 img, .c3 img, .c4 img, .c5 img, .c6 img {
+
+	width: 75%
+
+}
+
+.c1 img {
+	-webkit-filter:blur(10px);
+	filter: blur(10px);
+}
+
+.c2 img, .c4 img, .c6 img{
+	-webkit-filter:grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.c3 img{
+	-webkit-filter:sepia(90%);
+	filter: sepia(90%);
+}
